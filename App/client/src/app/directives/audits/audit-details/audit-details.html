@@ -1,0 +1,25 @@
+<div layout="row" width="100%">
+    <div layout="column" flex>
+        <div class="md-display-2">Audit Details</div>
+    </div>
+    <div layout="column" layout-align="end end" flex>
+
+        <!--<md-button class="md-primary md-raised">Start Query</md-button>-->
+    </div>
+</div>
+
+<md-divider></md-divider>
+<md-card>
+    <div class="md-display-1">Audit</div>
+    <md-content class="md-padding">
+        <pre>{{audit | json}}</pre>
+    </md-content>
+</md-card>
+<md-card>
+    <div class="md-display-1">Comment</div>
+    <md-content class="md-padding">
+        {{audit.comment}}
+    </md-content>
+</md-card>
+
+

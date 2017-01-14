@@ -1,0 +1,16 @@
+<div>
+    <table datatable="ng" dt-options="dtOptions" dt-column-defs="dtColumnDefs"  class="mdl-data-table dt-left">
+        <thead>
+        <tr>
+            <th >Identifier</th>
+            <th >Name</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in shipments" >
+            <td >{{ item.id }}</td>
+            <td >{{ item.name }}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>

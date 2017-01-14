@@ -1,0 +1,24 @@
+<div id="appHeader">
+
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <i class="material-icons">apps</i>
+            &nbsp;&nbsp;
+            <a ui-sref=".dashboard">
+
+                <b>BigRangular</b>
+            </a>
+            <md-progress-circular ng-hide="!showActivity" ng-disabled="!showActivity"
+                                  class="md-warn" md-diameter="40"></md-progress-circular>
+
+            <span flex></span>
+            <md-button href="/jobs/" target="_blank" class="white md-raised">Jobs</md-button>
+            <md-button href="/api-docs/" target="_blank" class="white md-raised">API Docs</md-button>
+&nbsp;&nbsp;
+            <a ng-click="logout()">LOGOUT</a>
+            &nbsp;&nbsp;
+        </div>
+
+    </md-toolbar>
+
+</div>

@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "app",
+  "main": "index.js",
+  "engines": {
+    "node": "4.6.2",
+    "npm":"4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1 ",
+    "heroku-postbuild": "cd client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/bigwork/app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/bigwork/app#readme",
+  "devDependencies": {},
+  "dependencies": {}
+}

@@ -1,0 +1,2 @@
+App::Application.config.secret_key_base = ENV['SECRET_TOKEN'] || '61b5d2bfb23af6aab2d799f7bcccc8a8600e2bed1286ebf0dce3505aeab70a4c0c09065acb3284d2fab805d997e8a2597dedeb33d64cec274d8b3a23dbf3ff48
+'

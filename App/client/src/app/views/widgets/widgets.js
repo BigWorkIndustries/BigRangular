@@ -12,7 +12,7 @@
         'ui.router',
         'app.services',
         auditsDirective
-    ]).config(Config).controller('WidgetsViewCtrl', Controller);
+    ]).config(Config).controller('WidgetsCtrl', Controller);
 
     /* @ngInject */
     function Controller($rootScope, $scope, $log,AppServices,widgets) {

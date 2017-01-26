@@ -5,11 +5,6 @@ Yet another Ruby on Rail, Angular, and Webpack boilerplate.
 This README documents steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
-
-## Ruby version
-  * 2.3.1
-
 ## System dependencies
   * Angular 1.6.1
   * Ruby 2.3.1
@@ -36,7 +31,7 @@ Things you may want to cover:
     * Angular: ```cd client && npm test```
 
 * Services (job queues, cache servers, search engines, etc.)
-    * RBD
+    * TBD
 
 * Deployment instructions
     * ```cd client && npm run build```

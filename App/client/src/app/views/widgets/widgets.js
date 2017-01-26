@@ -23,7 +23,7 @@
         function Init() {
 
             //$log.debug('user_scac_data: ' + JSON.stringify(user_scac_data,null,2));
-            $rootScope.showActivity = true;
+            //$rootScope.showActivity = true;
 
             /*
             AppServices.api.widgets.get_default_audits({}, function (result) {

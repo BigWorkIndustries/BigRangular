@@ -1,11 +1,1 @@
 web: bundle exec rails server -p $PORT -b 0.0.0.0
-user_scac_query01: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query02: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query03: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query04: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query05: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query06: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query07: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query08: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query09: QUEUE=user_scac_query bundle exec rake jobs:work
-user_scac_query10: QUEUE=user_scac_query bundle exec rake jobs:work

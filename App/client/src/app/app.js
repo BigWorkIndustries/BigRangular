@@ -42,28 +42,45 @@
     ]).run(Run).config(Config)
 
     /* @ngInject */
-    function Run($rootScope,$ocLazyLoad){
+    function Run($rootScope, $ocLazyLoad) {
 
         $rootScope.showActivity = false;
 
-        $rootScope.$evalAsync(function(){
+        $rootScope.$evalAsync(function () {
 
-            require.ensure([],function(){
+            require.ensure([], function () {
 
                 require('./views/widgets/widgets');
-                $ocLazyLoad.load({name:'app.views.widgets'});
+                $ocLazyLoad.load({name: 'app.views.widgets'});
 
             });
         });
     }
 
     /* @ngInject */
-    function Config($compileProvider,OAuthProvider,OAuthTokenProvider) {
+    function Config($compileProvider, OAuthProvider, OAuthTokenProvider) {
 
         $compileProvider.preAssignBindingsEnabled(true);
 
+        if (!AppConfig) {
+
+            window.AppConfig = {
+                "services": {
+                    "oauth": {
+                        "uid": "02990a75adf79008d0cdcc0890ab78834c9199b23c9b6101638f826c6fcc6a42"
+                    }
+                },
+                "urls": {
+                    "api": "http://127.0.0.1:3000/api/v1"
+                },
+                "env": "development"
+            };
+
+            console.log('AppConfig Not Loaded From Server.');
+        }
+
         if (AppConfig.env != 'production') {
-            console.log('AppConfig: ' + JSON.stringify(AppConfig,null,2));
+            console.log('AppConfig: ' + JSON.stringify(AppConfig, null, 2));
         }
 
         OAuthProvider.configure({

@@ -13,6 +13,11 @@ module V1
         end
       end
 
+      desc 'Gets all audit records'
+      get '' do
+        present Audited::Audit.all
+      end
+
       delete 'prune' do
 
         Audited::Audit.order('created_at DESC').offset(10000).destroy_all

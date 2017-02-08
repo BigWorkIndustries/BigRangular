@@ -5,10 +5,10 @@
   "main": "index.js",
   "engines": {
     "node": "4.6.2",
-    "npm":"4.0.2"
+    "npm": "4.0.2"
   },
   "scripts": {
-    "start":"cd client && npm start",
+    "start": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1 ",
     "heroku-postbuild": "cd client && npm install"
   },
@@ -19,6 +19,9 @@
   "author": "",
   "license": "ISC",
   "homepage": "https://bitbucket.org/bigwork/app#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-ngdocs": "^0.2.10"
+  },
   "dependencies": {}
 }

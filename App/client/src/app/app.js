@@ -41,7 +41,20 @@
         'app.views.dashboard'
     ]).run(Run).config(Config)
 
+
     /* @ngInject */
+    /**
+     * @ngdoc directive
+     * @name global.directive:nameOfDirective
+     * @scope
+     * @restrict E
+     *
+     * @description
+     * A description of the directive
+     *
+     * @param {object}  field   A field object
+     *
+     */
     function Run($rootScope, $ocLazyLoad) {
 
         $rootScope.showActivity = false;
@@ -62,7 +75,7 @@
 
         $compileProvider.preAssignBindingsEnabled(true);
 
-        if (!AppConfig) {
+        if (!window.AppConfig) {
 
             window.AppConfig = {
                 "services": {
@@ -79,8 +92,8 @@
             console.log('AppConfig Not Loaded From Server.');
         }
 
-        if (AppConfig.env != 'production') {
-            console.log('AppConfig: ' + JSON.stringify(AppConfig, null, 2));
+        if (window.AppConfig.env != 'production') {
+            console.log('AppConfig: ' + JSON.stringify(window.AppConfig, null, 2));
         }
 
         OAuthProvider.configure({

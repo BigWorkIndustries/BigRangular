@@ -2,7 +2,7 @@ FactoryGirl.define do
   factory :delayed_job do
     priority 1
     attempts 1
-    handler 'eta_user_scac'
+    handler 'widget'
     last_error null
     run_at DateTime.now
     locked_at null

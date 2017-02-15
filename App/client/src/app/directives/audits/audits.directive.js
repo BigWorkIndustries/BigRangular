@@ -73,6 +73,11 @@
 
     };
 
+    /**
+     * @ngdoc directive
+     * @name appAudits
+     * @constructor
+     */
     function Directive() {
         return {
             restrict: 'E',

@@ -13,6 +13,12 @@
     ]).service('WidgetsService', Service);
 
     /** @ngInject */
+    /**
+     * @ngdoc service
+     * @name WidgetsService
+     * @requires $resource
+     * @constructor
+     */
     function Service($resource) {
         var path = '/widgets';
         var base_path = AppConfig.urls.api + path;

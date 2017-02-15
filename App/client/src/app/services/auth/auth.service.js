@@ -15,6 +15,19 @@
     ]).service('AuthService', Service);
 
     /** @ngInject */
+    /**
+     * @ngdoc service
+     * @name AuthService
+     * @requires $rootScope
+     * @requires $log
+     * @requires $state
+     * @requires OAuth
+     * @requires $cookies
+     * @requires $http
+     * @requires $q
+     * @requires $timeout
+     * @constructor
+     */
     function Service($rootScope, $log, $state, OAuth, $cookies, $http, $q, $timeout) {
 
         var self = this;

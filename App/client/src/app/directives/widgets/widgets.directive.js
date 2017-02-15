@@ -109,6 +109,10 @@
 
     };
 
+    /**
+     * @ngdoc directive
+     * @name appWidgets
+     */
     function Directive() {
         return {
             restrict: 'E',

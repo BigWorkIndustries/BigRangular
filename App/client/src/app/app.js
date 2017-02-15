@@ -43,18 +43,6 @@
 
 
     /* @ngInject */
-    /**
-     * @ngdoc directive
-     * @name global.directive:nameOfDirective
-     * @scope
-     * @restrict E
-     *
-     * @description
-     * A description of the directive
-     *
-     * @param {object}  field   A field object
-     *
-     */
     function Run($rootScope, $ocLazyLoad) {
 
         $rootScope.showActivity = false;

@@ -15,6 +15,15 @@
     ]).service('ApiServices', Service);
 
     /** @ngInject */
+    /**
+     * @ngdoc service
+     * @name ApiServices
+     * @requires WidgetsService
+     * @requires AuditsService
+     * @param WidgetsService
+     * @param AuditsService
+     * @constructor
+     */
     function Service(WidgetsService,AuditsService) {
 
         this.widgets = WidgetsService;

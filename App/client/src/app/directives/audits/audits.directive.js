@@ -73,6 +73,11 @@
 
     };
 
+    /**
+     * @ngdoc directive
+     * @returns {{restrict: string, template: *, controller: Controller, scope: {audits: string}, link: Link}}
+     * @constructor
+     */
     function Directive() {
         return {
             restrict: 'E',

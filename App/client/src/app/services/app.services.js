@@ -12,6 +12,15 @@
     ]).service('AppServices', Service);
 
     /* @ngInject */
+    /**
+     * @ngdoc service
+     * @name AppServices
+     * @requires AuthService
+     * @requires ApiServices
+     * @param AuthService
+     * @param ApiServices
+     * @constructor
+     */
     function Service(AuthService,ApiServices) {
         this.auth = AuthService;
         this.api = ApiServices;

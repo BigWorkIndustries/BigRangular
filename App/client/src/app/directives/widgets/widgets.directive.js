@@ -32,6 +32,17 @@
     }
 
     /* @ngInject */
+    /**
+     * @ngdoc controller
+     * @param $rootScope
+     * @param $scope
+     * @param $log
+     * @param $state
+     * @param DTOptionsBuilder
+     * @param DTColumnDefBuilder
+     * @param AppServices
+     * @constructor
+     */
     function Controller($rootScope, $scope, $log,$state, DTOptionsBuilder, DTColumnDefBuilder, AppServices) {
 
         // this.updateShipments = function (shipments) {
@@ -109,6 +120,11 @@
 
     };
 
+    /**
+     * @ngdoc directive
+     * @returns {{restrict: string, template: *, controller: Controller, scope: {shipments: string}, link: Link}}
+     * @constructor
+     */
     function Directive() {
         return {
             restrict: 'E',

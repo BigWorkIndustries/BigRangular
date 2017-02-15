@@ -13,6 +13,14 @@
     ]).service('AuditsService', Service);
 
     /** @ngInject */
+    /**
+     * @ngoc service
+     * @name AuditsService
+     * @requires $resource
+     * @param $resource
+     * @returns {*}
+     * @constructor
+     */
     function Service($resource) {
         var path = '/audits';
         var base_path = AppConfig.urls.api + path;

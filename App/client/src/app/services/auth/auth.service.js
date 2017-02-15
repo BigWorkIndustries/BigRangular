@@ -26,14 +26,6 @@
      * @requires $http
      * @requires $q
      * @requires $timeout
-     * @param $rootScope
-     * @param $log
-     * @param $state
-     * @param OAuth
-     * @param $cookies
-     * @param $http
-     * @param $q
-     * @param $timeout
      * @constructor
      */
     function Service($rootScope, $log, $state, OAuth, $cookies, $http, $q, $timeout) {

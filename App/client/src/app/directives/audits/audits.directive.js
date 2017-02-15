@@ -75,7 +75,7 @@
 
     /**
      * @ngdoc directive
-     * @returns {{restrict: string, template: *, controller: Controller, scope: {audits: string}, link: Link}}
+     * @name appAudits
      * @constructor
      */
     function Directive() {

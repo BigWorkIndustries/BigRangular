@@ -17,8 +17,6 @@
      * @ngdoc service
      * @name WidgetsService
      * @requires $resource
-     * @param $resource
-     * @returns {*}
      * @constructor
      */
     function Service($resource) {

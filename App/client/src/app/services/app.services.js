@@ -17,8 +17,6 @@
      * @name AppServices
      * @requires AuthService
      * @requires ApiServices
-     * @param AuthService
-     * @param ApiServices
      * @constructor
      */
     function Service(AuthService,ApiServices) {

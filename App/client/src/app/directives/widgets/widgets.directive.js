@@ -112,6 +112,7 @@
     /**
      * @ngdoc directive
      * @name appWidgets
+     * @restrict E
      */
     function Directive() {
         return {

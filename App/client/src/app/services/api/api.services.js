@@ -18,13 +18,25 @@
     /**
      * @ngdoc service
      * @name ApiServices
+     * @overview Consolidates various API services.
      * @requires WidgetsService
      * @requires AuditsService
      * @constructor
      */
     function Service(WidgetsService,AuditsService) {
 
+        /**
+         * @ngdoc property
+         * @name widgets
+         * @propertyOf ApiServices
+         */
         this.widgets = WidgetsService;
+
+        /**
+         * @ngdoc property
+         * @name audits
+         * @propertyOf ApiServices
+         */
         this.audits = AuditsService;
 
     };

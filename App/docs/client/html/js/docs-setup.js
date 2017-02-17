@@ -9,7 +9,7 @@ NG_DOCS={
       "shortName": "ApiServices",
       "type": "service",
       "moduleName": "ApiServices",
-      "keywords": "api apiservices auditsservice service widgetsservice"
+      "keywords": "api apiservices audits auditsservice consolidates property service services widgets widgetsservice"
     },
     {
       "section": "api",

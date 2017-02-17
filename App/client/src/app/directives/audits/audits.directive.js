@@ -76,6 +76,7 @@
     /**
      * @ngdoc directive
      * @name appAudits
+     * @restrict E
      * @constructor
      */
     function Directive() {
